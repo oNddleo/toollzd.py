@@ -2,8 +2,8 @@ from openpyxl import load_workbook
 from openpyxl import Workbook
 from order import Order
 from selenium import webdriver
-
-
+from selenium.common.exceptions import NoSuchElementException
+import time
 def readFile(fileName):
     wb = load_workbook(filename=fileName, read_only=True)
     ws = wb['Sheet1']
@@ -28,7 +28,7 @@ def writeFile(data):
     # print('data=',data)
     wb = Workbook()
     ws = wb.active
-    ws.append(['Email','Mã đơn hàng', 'Link check', 'Trạng thái', 'Họ và tên', 'Địa chỉ', 'Số điện thoại', 'Giá sản phẩm'])
+    ws.append(['Họ và tên', 'Số điện thoại',  'Trạng thái', 'Giá sản phẩm','Địa chỉ','Mã đơn hàng', 'Email', 'Link check'])
     for row in data:
         ws.append(row)
     wb.save('out.xlsx')
@@ -43,17 +43,22 @@ def run():
         print('...', element.orderID, element.email)
         link = 'https://my.lazada.vn/customer/order/view/?tradeOrderId=' + str(element.orderID) + '&buyerEmail=' + element.email
         browser.get(link)
-        totalPrice = browser.find_element_by_class_name('total-price').text
-        delivery = browser.find_element_by_class_name('delivery-wrapper')
+        time.sleep(1)
+        totalPrice = browser.find_element_by_xpath("//span[@class='text bold total-price pull-right']").text
+        delivery = browser.find_element_by_class_name("delivery-wrapper")
         temp = delivery.text.splitlines()
         name = temp[1]
         address = temp[2]
         phone = temp[3]
         # print('....', temp)
         
-        status = browser.find_element_by_class_name('tracking-item-content').text
-        info.append(element.email)
-        info.extend([element.orderID, link, status, name, address, phone, totalPrice])
+        try:
+            status = browser.find_element_by_class_name('tracking-item-content').text
+        except NoSuchElementException:
+            status = 'Đã hủy'
+
+        info.append(name)
+        info.extend([phone, status, totalPrice, address, element.orderID,element.email, link])
         # info = Info(name, address, phone, link, element.orderID, element.email, status, totalPrice)
         listInfo.append(info)
         

@@ -1,0 +1,66 @@
+[INFO  - 2018-04-17T13:36:22.136Z] GhostDriver - Main - running on port 52948
+[INFO  - 2018-04-17T13:36:22.289Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2018-04-17T13:36:22.289Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.customHeaders:  - {}
+[INFO  - 2018-04-17T13:36:22.289Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2018-04-17T13:36:22.289Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 513b4bd0-4244-11e8-a6f6-df4d15b7e7e4
+[ERROR - 2018-04-17T13:36:28.738Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - msg: TypeError: 2 is not a constructor (evaluating 'unescape(a[0])')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:28.738Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - stack:
+  s_PPVg (undefined:1)
+  s_PPVevent (:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:28.855Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - msg: TypeError: 1 is not a constructor (evaluating 'unescape(a[0])')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:28.855Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - stack:
+  s_PPVg (undefined:1)
+  s_PPVevent (:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:28.950Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - msg: TypeError: 1 is not a constructor (evaluating 'unescape(a[0])')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:28.950Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - stack:
+  s_PPVg (undefined:1)
+  s_PPVevent (:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:29.216Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1523972189173
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:29.218Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - msg: TypeError: 1 is not a constructor (evaluating 'unescape(a[0])')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:29.218Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - stack:
+  s_PPVg (undefined:1)
+  s_PPVevent (:1)
+  renderBase64 (:0)
+  createFailedCommandEH (phantomjs://platform/errors.js:229)
+  handleFailedCommandEH (phantomjs://platform/errors.js:235)
+  _handleLocateCommand (phantomjs://code/webelementlocator.js:240)
+  (anonymous function) (phantomjs://code/webelementlocator.js:230)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:29.632Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - msg: TypeError: 1 is not a constructor (evaluating 'unescape(a[0])')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:29.632Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - stack:
+  s_PPVg (undefined:1)
+  s_PPVevent (:1)
+  renderBase64 (:0)
+  createFailedCommandEH (phantomjs://platform/errors.js:229)
+  handleFailedCommandEH (phantomjs://platform/errors.js:235)
+  _handleLocateCommand (phantomjs://code/webelementlocator.js:240)
+  (anonymous function) (phantomjs://code/webelementlocator.js:230)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:30.149Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - msg: TypeError: 1 is not a constructor (evaluating 'unescape(a[0])')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-04-17T13:36:30.150Z] Session [513b4bd0-4244-11e8-a6f6-df4d15b7e7e4] - page.onError - stack:
+  s_PPVg (undefined:1)
+  s_PPVevent (:1)
+
+  phantomjs://platform/console++.js:263 in error
