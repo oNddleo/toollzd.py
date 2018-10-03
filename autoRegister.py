@@ -21,9 +21,12 @@ def readFile(fileName):
 
 
 def run():
-    listRegister = readFile('login.xlsx')
-    
+    listRegister = readFile('register2.xlsx')
+    listArr = ["Phường 1", "Phường 2", "Phường 3", "Phường 4", "Phường 5", "Phường 6", "Phường 7", "Phường 8", "Phường 9", "Phường 10", "Phường 11", "Phường 12", "Phường 13", "Phường 14", "Phường 15", "Phường 16"]
+    i = 0
     for element in listRegister:
+        if i > 15 :
+            i = 0
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--incognito")
         chrome_options.add_argument("--start-maximized")
@@ -47,7 +50,8 @@ def run():
         browser.find_element_by_xpath("//div[@class='mod-input mod-input-phone']//input").send_keys(element.phone)
         browser.find_element_by_xpath("//div[@class='mod-input mod-input-detailAddress']//input").send_keys(element.address)
         
-        arr = ["R1973756---Hồ Chí Minh", "R6846181---Quận 11", "Phường 7"]
+        arr = ["R1973756---Hồ Chí Minh", "R6846181---Quận 11", listArr[i]]
+        i = i + 1
         browser.execute_script("""
             var province = arguments[0];
             var district = arguments[1];
