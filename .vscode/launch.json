@@ -7,7 +7,7 @@
         
         {
             "name": "PySpark",
-            "type": "pythonExperimental",
+            "type": "python",
             "request": "launch",
             "osx": {
                 "pythonPath": "${env:SPARK_HOME}/bin/spark-submit"
